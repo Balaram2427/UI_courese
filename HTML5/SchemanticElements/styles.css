@@ -1,0 +1,39 @@
+html{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    height: 100vh;
+}
+.banking-grid{
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1fr 5rem;
+    height: 100vh;
+}
+header{
+    grid-area: 'header';
+    background-color: rgb(1, 8, 8);
+    color: azure;
+    font-size: 3rem;
+
+}
+main{
+    grid-area: 'main';
+
+}
+footer{
+    grid-area: 'footer';
+    background-color: aqua;
+    color: azure;
+
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
